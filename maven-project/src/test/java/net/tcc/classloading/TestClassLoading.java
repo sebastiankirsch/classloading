@@ -6,8 +6,8 @@ public class TestClassLoading {
 
 	@Test
 	public void test() {
-		Thread[] threads = new Thread[] { new PriorityLoader(),
-				new LevelLoader() };
+		Thread[] threads = new Thread[] { new PriorityLoaderByClassForName(),
+				new LevelLoaderByClassForName() };
 
 		for (Thread t : threads) {
 			t.start();

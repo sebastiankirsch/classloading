@@ -1,8 +1,8 @@
 package net.tcc.classloading;
 
-public class PriorityLoader extends Thread {
+public class PriorityLoaderByClassForName extends Thread {
 
-	public PriorityLoader() {
+	public PriorityLoaderByClassForName() {
 		super("PriorityLoader");
 	}
 

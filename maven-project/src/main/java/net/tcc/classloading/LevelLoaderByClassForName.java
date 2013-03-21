@@ -1,8 +1,8 @@
 package net.tcc.classloading;
 
-public class LevelLoader extends Thread {
+public class LevelLoaderByClassForName extends Thread {
 
-	public LevelLoader() {
+	public LevelLoaderByClassForName() {
 		super("LevelLoader");
 	}
 
