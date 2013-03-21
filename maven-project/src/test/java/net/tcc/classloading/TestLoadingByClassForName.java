@@ -2,7 +2,7 @@ package net.tcc.classloading;
 
 import org.junit.Test;
 
-public class TestClassLoading {
+public class TestLoadingByClassForName {
 
 	@Test
 	public void test() {
