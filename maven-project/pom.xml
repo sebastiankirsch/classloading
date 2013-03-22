@@ -15,5 +15,10 @@
   		<artifactId>junit</artifactId>
   		<version>4.11</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.apache.commons</groupId>
+  		<artifactId>org.apache.commons.logging</artifactId>
+  		<version>1.0.4.v200706111724</version>
+  	</dependency>
   </dependencies>
 </project>
