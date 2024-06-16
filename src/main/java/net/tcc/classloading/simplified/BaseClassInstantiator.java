@@ -1,8 +1,5 @@
 package net.tcc.classloading.simplified;
 
-import java.util.Random;
-import java.util.logging.Level;
-
 public class BaseClassInstantiator extends Thread {
 
     public BaseClassInstantiator() {

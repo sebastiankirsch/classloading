@@ -4,7 +4,7 @@ import org.junit.Test;
 
 
 public class TestClassLoadingDeadlock {
-  @Test
+  @Test(timeout = 2_048)
   public void test() {
     Thread[] threads = new Thread[] {
       new BaseClassInstantiator(),
