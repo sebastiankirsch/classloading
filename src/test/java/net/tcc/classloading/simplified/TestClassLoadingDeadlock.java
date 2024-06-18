@@ -1,32 +1,22 @@
 package net.tcc.classloading.simplified;
 
+import net.tcc.classloading.BaseTest;
 import org.junit.Test;
 
 
-public class TestClassLoadingDeadlock {
-  @Test(timeout = 2_048)
-  public void test() {
-    Thread[] threads = new Thread[] {
-      new BaseClassInstantiator(),
-      new SubClassInstantiator()
-    };
+public class TestClassLoadingDeadlock extends BaseTest {
 
-    for (Thread t : threads) {
-      t.start();
+    @Test
+    public void demonstrateSimplifiedScenario() {
+        executeAndWaitForThreads(
+                new BaseClassInstantiator(),
+                new SubClassInstantiator());
     }
 
-    for (Thread t : threads) {
-      try {
-        t.join();
-      } catch (InterruptedException e) {
-        Thread.currentThread().interrupt();
-        return;
-      }
+    public static void main(String[] args) {
+        System.out.println("START");
+        new TestClassLoadingDeadlock().demonstrateSimplifiedScenario();
+        System.exit(0);
     }
-  }
 
-  public static void main(String[] args) {
-    System.out.println("START");
-    new TestClassLoadingDeadlock().test();
-  }
 }
