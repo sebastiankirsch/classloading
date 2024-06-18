@@ -15,3 +15,6 @@ Therefore, the test
 [`TestClassLoadingDeadlock`](src/test/java/net/tcc/classloading/simplified/TestClassLoadingDeadlock.java)
 is an even more simplified scenario reduced to the problem of a classloading deadlock.
 This proved to be very likely in producing a deadlock (at least on my hardware).
+
+## Log4j 2
+Note that Log4j 2 no longer sports the problematic class hierarchy, and thus shouldn't produce the discussed behavior.
