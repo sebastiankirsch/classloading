@@ -1,5 +1,6 @@
-classloading
-============
+:information_source: Since `log4j:log4j` isn't maintained any longer, this repository is archived to shut up Dependabot.
+
+# classloading
 
 A small test setup to demonstrate the issues described here: http://stackoverflow.com/questions/15543521/mixed-usage-of-log4j-and-commons-logging-causes-a-class-loading-deadlock
 
